@@ -17,11 +17,11 @@ def main():
         st.sidebar.success('To try by yourself by adding a audio file .')
         application()
     if selected_box=='view source code':
-        st.code(get_file_content_as_string("app.py"))
+        st.code(get_file_content_as_string("new.py"))
 
 @st.cache(show_spinner=False)
 def get_file_content_as_string(path):
-    url = 'https://raw.githubusercontent.com/chiluveri-sanjay/Emotion-recognition/main/' + path
+    url = 'https://raw.githubusercontent.com/fr0styyXD/SER/main/' + path
     response = urllib.request.urlopen(url)
     return response.read().decode("utf-8")
     
